@@ -1,0 +1,34 @@
+:root {
+    /* Cores principais */
+    --primary-color: #008783; /* Verde principal */
+    --primary-text-color: #FFFFFF; /* Texto branco */
+  
+    /* Cores de fundo */
+    --background-color: #FFFFFF; /* Fundo branco */
+    --background-color-dark: #1D1B1C; /* Fundo cinza claro */
+    /* Cores de texto */
+    --secondary-text-color: #424040; /* Texto secundário (cinza escuro) */
+    --tertiary-text-color: #154240; /* Texto terciário (verde escuro) */
+  
+    /* Cores de hover e estados */
+    --hover-color: #154240; /* Cor terciária para hover */
+  }
+  
+  /* Exemplo de uso das variáveis */
+  body {
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--tertiary-text-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }

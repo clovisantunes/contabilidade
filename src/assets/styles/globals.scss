@@ -1,0 +1,52 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definição da fonte padrão */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF; /* Fundo branco */
+    color: #424040; /* Cor de texto secundária */
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #008783; /* Cor principal para links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    color: #154240; /* Cor de texto terciária para títulos */
+    margin-bottom: 1rem;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #008783; /* Cor principal para botões */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #154240; /* Cor terciária ao passar o mouse */
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
