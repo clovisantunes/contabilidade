@@ -8,28 +8,40 @@ src/
 │       └── theme.css        # Theme styles (if needed)
 │
 ├── components/              # Reusable components
-│   ├── Header/
-│   │   ├── Header.tsx
-│   │   └── Header.css
+│   ├── Navbar/
+│   │   ├── utils/
+│   │   │   └── informations.json
+│   │   ├── Navbar.tsx
+│   │   └── styles.module.css
 │   ├── Footer/
+│   │   ├── utils/
+│   │   │   └── informations.json
 │   │   ├── Footer.tsx
-│   │   └── Footer.css
+│   │   └── styles.module.css
 │   ├── Button/
+│   │   ├── utils/
+│   │   │   └── informations.json
 │   │   ├── Button.tsx
-│   │   └── Button.css
-│   └── ...                  # Other components
+│   │   └── styles.module.css
+│   └── ...                  # Outros componentes
 │
 ├── pages/                   # Site pages
 │   ├── Home/
+│   │   ├── utils/
+│   │   │   └── informations.json
 │   │   ├── Home.tsx
-│   │   └── Home.css
+│   │   └── styles.module.css
 │   ├── Services/
+│   │   ├── utils/
+│   │   │   └── informations.json
 │   │   ├── Services.tsx
-│   │   └── Services.css
+│   │   └── styles.module.css
 │   ├── About/
+│   │   ├── utils/
+│   │   │   └── informations.json
 │   │   ├── About.tsx
-│   │   └── About.css
-│   └── ...                  # Other pages
+│   │   └── styles.module.css
+│   └── ...                  # Outras páginas
 │
 ├── hooks/                   # Custom hooks
 │   ├── useFetchData.ts

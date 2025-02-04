@@ -1,73 +1,60 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import logo from '../../assets/images/logo.png';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import { FaPhoneAlt } from "react-icons/fa";
+import logo from '../../assets/images/logo.png';
+import texts from './utils/informations.json'; // Importando o JSON
 
-
-export default function NavBar(){
-
-    const socials = [
-        {
-            name: "facebook",
-            icon: <FaFacebookF />
-        },
-        {
-            name: "instagram",
-            icon: <FaInstagram />
-        },
-        {
-            name: "linkedin",
-            icon: <FaLinkedinIn />
-        }
-    ]
-
+export default function NavBar() {
     const [navLeft, setNavLeft] = React.useState(true);
     const [navRight, setNavRight] = React.useState(false);
 
-    return(
+    const iconComponents = {
+        FaFacebookF: <FaFacebookF />,
+        FaInstagram: <FaInstagram />,
+        FaLinkedinIn: <FaLinkedinIn />
+    };
+
+    return (
         <>
-                <div className={styles.navbarSocial}>
-                    {socials.map((social, index) => (
-                        <span key={index}>
-                            {social.icon}
-                        </span>
-                        
-                    ))}
-                </div>
+            <div className={styles.navbarSocial}>
+                {texts.socials.map((social, index) => (
+                    <span key={index}>
+                        {iconComponents[social.icon]}
+                    </span>
+                ))}
+            </div>
             <div className={styles.navbar}>
                 <div className={styles.navbarMenu}>
                     {navLeft && (
                         <>
                             <div className={styles.contactCard}>
                                 <p>
-                               <CiMail /> loremipsum@gmail.com
+                                    <CiMail /> {texts.contact.email}
                                 </p>
                                 <p>
-                                <FaPhoneAlt /> xxxx xxx xxxx
+                                    <FaPhoneAlt /> {texts.contact.phone}
                                 </p>
                             </div>
                             <div className={styles.navbarMenuLeft}>
                                 <div className={styles.navItems}>
-                                <a href="#">Inicio</a>
-                                <a href="#">Sobre</a>
-                                <a href="#">Serviços</a>
-                                <a href="#">Contato</a>
+                                    {texts.menu.items.map((item, index) => (
+                                        <a key={index} href={item.href}>
+                                            {item.label}
+                                        </a>
+                                    ))}
                                 </div>
-                            <img src={logo} />
+                                <img src={logo} alt="Logo" />
                             </div>
                         </>
                     )}
                     {navRight && (
                         <>
-                        
+                            {/* Conteúdo da direita */}
                         </>
                     )}
                 </div>
             </div>
         </>
-    )
+    );
 }

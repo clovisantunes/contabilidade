@@ -1,0 +1,28 @@
+{
+    "socials": [
+      {
+        "name": "facebook",
+        "icon": "FaFacebookF"
+      },
+      {
+        "name": "instagram",
+        "icon": "FaInstagram"
+      },
+      {
+        "name": "linkedin",
+        "icon": "FaLinkedinIn"
+      }
+    ],
+    "contact": {
+      "email": "loremipsum@gmail.com",
+      "phone": "xxxx xxx xxxx"
+    },
+    "menu": {
+      "items": [
+        { "label": "Inicio", "href": "#" },
+        { "label": "Sobre", "href": "#" },
+        { "label": "Serviços", "href": "#" },
+        { "label": "Contato", "href": "#" }
+      ]
+    }
+  }
