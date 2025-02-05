@@ -41,7 +41,6 @@ export default function Footer() {
                     <img src={logo} alt="Logo" />
                 </div>
 
-                {/* Coluna do Menu */}
                 <div className={styles.footerColumn}>
                     <h3>{footerData.menu.titulo}</h3>
                     <ul>
@@ -51,7 +50,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Coluna dos Serviços */}
                 <div className={styles.footerColumn}>
                     <h3>{footerData.servicos.titulo}</h3>
                     <ul>
@@ -61,7 +59,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Coluna de Contatos */}
                 <div className={styles.footerColumn}>
                     <h3>{footerData.contatos.titulo}</h3>
                     <ul>

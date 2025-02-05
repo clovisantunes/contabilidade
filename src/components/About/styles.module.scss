@@ -5,12 +5,18 @@
     align-items: center;
     height: auto;
     padding: 2rem;
-    width:100% ; // Adicione um padding para espaçamento
+    width:100% ;
   }
   .aboutCard{
     width: 60%;
     display: flex;
     flex-direction: row;
+    @media(max-width: 1366px){
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
   }
   .aboutContent {
     display: flex;
@@ -27,9 +33,12 @@
     background-image: url('../../assets/images/aboutImage.png');
     background-size: cover;
     background-position: center;
-    
     clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
+    @media(max-width: 1366px){
+      
+        display: none;
+    }
+  }
 
   
   .aboutItem {
