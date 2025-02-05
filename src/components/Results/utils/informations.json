@@ -1,0 +1,16 @@
+{
+    "title": "Nossos",
+    "colorTitle": "resultados",
+    "trabalhosConcluidos": {
+      "valor": 1853,
+      "texto": "Trabalhos concluídos"
+    },
+    "clientesSatisfeitos": {
+      "valor": 650,
+      "texto": "Clientes satisfeitos"
+    },
+    "equipes": {
+      "valor": 8,
+      "texto": "Equipes"
+    }
+  }

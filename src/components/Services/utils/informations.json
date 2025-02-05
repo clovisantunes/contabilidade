@@ -1,0 +1,55 @@
+{
+    "servicos": [
+        {
+            "title": "Nossos",
+            "colorTitle": "Serviços"
+        },
+
+      {
+        "nome": "Contabilidade",
+        "icone": "FaBalanceScale",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Orçamento Empresarial",
+        "icone": "FaChartLine",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Escrita Fiscal",
+        "icone": "FaFileInvoice",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Departamento Pessoal",
+        "icone": "FaUsers",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Controle de Custos",
+        "icone": "FaCalculator",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Certificado Digital",
+        "icone": "FaCertificate",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Societário",
+        "icone": "FaBuilding",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Pessoa Física",
+        "icone": "FaUser",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      },
+      {
+        "nome": "Folha de Pagamento",
+        "icone": "FaMoneyCheckAlt",
+        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      }
+    ]
+  }
+  
