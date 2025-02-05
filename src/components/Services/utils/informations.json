@@ -1,55 +1,53 @@
 {
-    "servicos": [
-        {
-            "title": "Nossos",
-            "colorTitle": "Serviços"
-        },
-
-      {
-        "nome": "Contabilidade",
-        "icone": "FaBalanceScale",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Orçamento Empresarial",
-        "icone": "FaChartLine",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Escrita Fiscal",
-        "icone": "FaFileInvoice",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Departamento Pessoal",
-        "icone": "FaUsers",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Controle de Custos",
-        "icone": "FaCalculator",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Certificado Digital",
-        "icone": "FaCertificate",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Societário",
-        "icone": "FaBuilding",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Pessoa Física",
-        "icone": "FaUser",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      },
-      {
-        "nome": "Folha de Pagamento",
-        "icone": "FaMoneyCheckAlt",
-        "descricao": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-      }
-    ]
-  }
-  
+  "servicos": {
+    "title": "Nossos",
+    "colorTitle": "Serviços"
+  },
+  "servicosLista": [
+    {
+      "nome": "Contabilidade",
+      "icone": "FaBalanceScale",
+      "descricao": "Gerenciamos a contabilidade da sua empresa de forma eficiente."
+    },
+    {
+      "nome": "Orçamento Empresarial",
+      "icone": "FaChartLine",
+      "descricao": "Planejamento financeiro estratégico para seu negócio."
+    },
+    {
+      "nome": "Escrita Fiscal",
+      "icone": "FaFileInvoice",
+      "descricao": "Organização e controle da escrituração fiscal."
+    },
+    {
+      "nome": "Departamento Pessoal",
+      "icone": "FaUsers",
+      "descricao": "Gestão completa do seu departamento pessoal."
+    },
+    {
+      "nome": "Controle de Custos",
+      "icone": "FaCalculator",
+      "descricao": "Monitoramento e otimização dos custos empresariais."
+    },
+    {
+      "nome": "Certificado Digital",
+      "icone": "FaCertificate",
+      "descricao": "Emissão e renovação de certificados digitais."
+    },
+    {
+      "nome": "Societário",
+      "icone": "FaBuilding",
+      "descricao": "Abertura, alterações e encerramento de empresas."
+    },
+    {
+      "nome": "Pessoa Física",
+      "icone": "FaUser",
+      "descricao": "Serviços contábeis especializados para pessoa física."
+    },
+    {
+      "nome": "Folha de Pagamento",
+      "icone": "FaMoneyCheckAlt",
+      "descricao": "Gestão e processamento da folha de pagamento."
+    }
+  ]
+}

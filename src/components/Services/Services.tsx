@@ -4,38 +4,71 @@ import {
     FaBalanceScale, FaChartLine, FaFileInvoice, FaUsers, 
     FaCalculator, FaCertificate, FaBuilding, FaUser, FaMoneyCheckAlt 
 } from "react-icons/fa";
+import servicesDataJson from './utils/informations.json'; // Importando o JSON
 
-const title = 
-{title: "Nossos", colorTitle: "Serviços",}
-const services = [
-    { nome: "Contabilidade", icone: <FaBalanceScale />, descricao: "Gerenciamos a contabilidade da sua empresa de forma eficiente." },
-    { nome: "Orçamento Empresarial", icone: <FaChartLine />, descricao: "Planejamento financeiro estratégico para seu negócio." },
-    { nome: "Escrita Fiscal", icone: <FaFileInvoice />, descricao: "Organização e controle da escrituração fiscal." },
-    { nome: "Departamento Pessoal", icone: <FaUsers />, descricao: "Gestão completa do seu departamento pessoal." },
-    { nome: "Controle de Custos", icone: <FaCalculator />, descricao: "Monitoramento e otimização dos custos empresariais." },
-    { nome: "Certificado Digital", icone: <FaCertificate />, descricao: "Emissão e renovação de certificados digitais." },
-    { nome: "Societário", icone: <FaBuilding />, descricao: "Abertura, alterações e encerramento de empresas." },
-    { nome: "Pessoa Física", icone: <FaUser />, descricao: "Serviços contábeis especializados para pessoa física." },
-    { nome: "Folha de Pagamento", icone: <FaMoneyCheckAlt />, descricao: "Gestão e processamento da folha de pagamento." }
-];
+interface Service {
+  nome: string;
+  icone: string; 
+  descricao: string;
+}
+
+interface Title {
+  title: string;
+  colorTitle: string;
+}
+
+interface ServicesData {
+  servicos: Title;
+  servicosLista: Service[];
+}
+
+const getIcon = (iconName: string) => {
+  switch (iconName) {
+    case "FaBalanceScale":
+      return <FaBalanceScale />;
+    case "FaChartLine":
+      return <FaChartLine />;
+    case "FaFileInvoice":
+      return <FaFileInvoice />;
+    case "FaUsers":
+      return <FaUsers />;
+    case "FaCalculator":
+      return <FaCalculator />;
+    case "FaCertificate":
+      return <FaCertificate />;
+    case "FaBuilding":
+      return <FaBuilding />;
+    case "FaUser":
+      return <FaUser />;
+    case "FaMoneyCheckAlt":
+      return <FaMoneyCheckAlt />;
+    default:
+      return null;
+  }
+};
 
 export default function Services() {
-    return (
-        <div className={styles.servicesContainer}>
-            <div className={styles.servicesItem}>
-            <div className={styles.title}>
-            <h1>{title.title}</h1><h1>{title.colorTitle}</h1>
-            </div>
-            <div className={styles.servicesContent}>
-                {services.map((service, index) => (
-                    <div key={index} className={styles.serviceCard}>
-                        <span className={styles.serviceIcon}>{service.icone}</span>
-                        <h3 className={styles.serviceTitle}>{service.nome}</h3>
-                        <p className={styles.serviceDescription}>{service.descricao}</p>
-                    </div>
-                ))}
-            </div>
-                </div>
+  const servicesData: ServicesData = servicesDataJson;
+
+  return (
+    <div className={styles.servicesContainer}>
+      <div className={styles.servicesItem}>
+        <div className={styles.title}>
+          <h1>{servicesData.servicos.title}</h1>
+          <h1>{servicesData.servicos.colorTitle}</h1>
         </div>
-    );
+        <div className={styles.servicesContent}>
+          {servicesData.servicosLista.map((service, index) => (
+            <div key={index} className={styles.serviceCard}>
+              <span className={styles.serviceIcon}>
+                {getIcon(service.icone)} 
+              </span>
+              <h3 className={styles.serviceTitle}>{service.nome}</h3>
+              <p className={styles.serviceDescription}>{service.descricao}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }

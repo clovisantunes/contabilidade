@@ -1,6 +1,6 @@
 {
     "menu": {
-      "titulo": "Menu",
+      "title": "Menu",
       "itens": ["Início", "Serviços", "Sobre", "Contato"]
     },
     "servicos": {

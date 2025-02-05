@@ -1,31 +1,30 @@
 {
-    "titulo": "Informação de contato",
-    "descricao": "Para qualquer informação entre em contato com nossa equipe.",
-    "contatos": [
-      {
-        "tipo": "Local",
-        "icone": "FaMapMarkerAlt",
-        "detalhes": [
-          "Sapiranga-RS, 93800-010",
-          "Av. Lorem Ipsum"
-        ]
-      },
-      {
-        "tipo": "Entre em contato",
-        "icone": "FaPhoneAlt",
-        "detalhes": [
-          "(51) xxxxx-xxx",
-          "xxxx xxx xxxx"
-        ]
-      },
-      {
-        "tipo": "Envie um e-mail",
-        "icone": "FaEnvelope",
-        "detalhes": [
-          "seuemail@gmail.com",
-          "loremipsum@gmail.com"
-        ]
-      }
-    ]
-  }
-  
+  "titulo": "Informação de contato",
+  "descricao": "Para qualquer informação entre em contato com nossa equipe.",
+  "contatos": [
+    {
+      "tipo": "Local",
+      "icone": "FaMapMarkerAlt",
+      "detalhes": [
+        "Sapiranga-RS, 93800-010",
+        "Av. Lorem Ipsum"
+      ]
+    },
+    {
+      "tipo": "Entre em contato",
+      "icone": "FaPhoneAlt",
+      "detalhes": [
+        "(51) xxxxx-xxx",
+        "xxxx xxx xxxx"
+      ]
+    },
+    {
+      "tipo": "Envie um e-mail",
+      "icone": "FaEnvelope",
+      "detalhes": [
+        "seuemail@gmail.com",
+        "loremipsum@gmail.com"
+      ]
+    }
+  ]
+}

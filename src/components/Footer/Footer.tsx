@@ -1,48 +1,20 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import logo from '../../assets/images/logoFooter.png'
+import logo from '../../assets/images/logoFooter.png';
+import texts from './utils/informations.json'; 
 
-const footerData = {
-    menu: {
-        titulo: "Menu",
-        itens: ["Início", "Serviços", "Sobre", "Contato"]
-    },
-    servicos: {
-        titulo: "Serviços",
-        itens: [
-            "Contabilidade",
-            "Orçamento Empresarial",
-            "Escrita Fiscal",
-            "Departamento Pessoal",
-            "Controle de Custos",
-            "Certificado Digital"
-        ]
-    },
-    contatos: {
-        titulo: "Nossos Contatos",
-        itens: [
-            "Sapiranga-RS, 93800-010",
-            "(51) xxxxx-xxx",
-            "xxxx xxx xxxx",
-            "seuemail@gmail.com",
-            "Veja mais",
-            "loremipsum@gmail.com"
-        ]
-    },
-    copyright: "© DevRoom 2024. Todos os direitos reservados."
-};
+const footerData = texts;
 
 export default function Footer() {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContent}>
-                {/* Coluna da Logo */}
                 <div className={styles.footerLogo}>
                     <img src={logo} alt="Logo" />
                 </div>
 
                 <div className={styles.footerColumn}>
-                    <h3>{footerData.menu.titulo}</h3>
+                    <h3>{footerData.menu.title}</h3>
                     <ul>
                         {footerData.menu.itens.map((item, index) => (
                             <li key={index}>{item}</li>
@@ -69,7 +41,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* Copyright */}
             <div className={styles.footerBottom}>
                 <p>{footerData.copyright}</p>
             </div>
